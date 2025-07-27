@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <nav class="bg-white py-2 fixed w-full">
+      <div class="container mx-auto flex justify-between">
+        <h1 class="text-3xl text-blue-700 font-bold">Portfolio</h1>
+        <ul class="hidden md:flex md:[&>*]:flex">
+          <li>
+            <a class="m-2 hover:text-blue-400 transition duration-300" href=""
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="m-2 hover:text-blue-400 transition duration-300" href=""
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="m-2 hover:text-blue-400 transition duration-300" href=""
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a class="m-2 hover:text-blue-400 transition duration-300" href=""
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a class="m-2 hover:text-blue-400 transition duration-300" href=""
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="md:hidden group">
+          <button
+            id="dropdown-menu"
+            class="md:hidden flex items-center px-3 py-2 border rounded text-blue-700 border-blue-700 cursor-pointer transition-transform duration-300 focus:scale-95 active:scale-90"
+            aria-label="Open Menu"
+          >
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" />
+            </svg>
+          </button>
+          <ul
+            id="dropdown"
+            class="w-[200px] rotate-x-90 group-hover:rotate-x-0 md:hidden absolute right-2 -top-10 group-hover:top-full bg-slate-400 rounded-b-lg transition-all duration-500"
+          >
+            <li
+              class="py-2 pl-6 cursor-pointer hover:bg-slate-300 transition duration-300"
+            >
+              <a href="">Home</a>
+            </li>
+            <li
+              class="py-2 pl-6 cursor-pointer hover:bg-slate-300 transition duration-300"
+            >
+              <a href="">About</a>
+            </li>
+            <li
+              class="py-2 pl-6 cursor-pointer hover:bg-slate-300 transition duration-300"
+            >
+              <a href="">Projects</a>
+            </li>
+            <li
+              class="py-2 pl-6 cursor-pointer hover:bg-slate-300 transition duration-300"
+            >
+              <a href="">Skills</a>
+            </li>
+            <li
+              class="py-2 pl-6 cursor-pointer rounded-b-lg hover:bg-slate-300 transition duration-300"
+            >
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <section class="bg-blue-600 min-h-screen flex items-center pt-16">
+      <div class="container mx-auto py-16">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 text-center md:text-left text-white">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+              Hi, I'm <span class="text-amber-400">Irfan Ahmed</span>
+            </h1>
+            <h2 class="text-xl md:text-2xl text-white mt-2 font-medium">
+              Web Developer & Designer
+            </h2>
+            <p
+              class="text-white text-[20px] font-stretch-expanded font-medium mt-8"
+            >
+              I create beautiful, functional websites and applications that help
+              businesses grow.
+            </p>
+            <div class="mt-8">
+              <button
+                class="bg-white text-[18px] py-3 px-5 cursor-pointer rounded-full font-bold text-blue-600 hover:bg-amber-100"
+              >
+                View My work
+              </button>
+              <button
+                class="ml-6 border-amber-50 border-2 cursor-pointer text-[18px] py-3 px-5 rounded-full font-bold text-white hover:bg-white hover:text-black"
+              >
+                Contact me
+              </button>
+            </div>
+          </div>
+          <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+            <div
+              class="size-70 bg-amber-100 overflow-hidden rounded-tl-[150px] rounded-br-[150px] rounded-tr-[100px] rounded-bl-[100px]"
+            >
+              <img
+                src="./images/irfan.jpg"
+                class="bg-cover bg-no-repeat"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section -->
+    <section class="container mx-auto py-12">
+      <h1 class="font-bold text-4xl text-center pt-10 pb-3">About Me</h1>
+      <div
+        class="bg-blue-500 h-1 w-[100px] text-center mx-auto mb-10 rounded-2xl"
+      ></div>
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <div
+            class="w-full bg-blue-100 flex justify-center items-center py-20 rounded-2xl"
+          >
+            <img
+              class="size-8/14 rounded-full"
+              src="./images/irfan2.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <div>
+            <div>
+              <h1 class="text-2xl font-bold my-4">Who I Am</h1>
+              <p class="text-[18px] my-4">
+                I'm a passionate web developer with over 5 years of experience
+                creating modern, responsive websites and applications. I
+                specialize in front-end development with expertise in HTML, CSS,
+                JavaScript, and various frameworks
+              </p>
+              <h1 class="text-2xl font-bold my-4">My Journey</h1>
+              <p class="text-[18px] my-4">
+                I started my journey as a self-taught developer and gradually
+                expanded my skills through formal education and hands-on
+                experience. I've worked with clients across various industries,
+                helping them establish a strong online presence.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-4 mt-8">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600"
+                >
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <span class="font-medium"> + Years Experience</span>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600"
+                >
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                <span class="font-medium"> + Projects</span>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600"
+                >
+                  <i class="fas fa-users"></i>
+                </div>
+                <span class="font-medium"> + Happy Clients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
