@@ -14,17 +14,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <nav class="bg-white py-2 fixed w-full">
-      <div class="container px-8 sm:mx-auto flex justify-between">
-        <h1 class="text-3xl text-blue-700 font-bold">Portfolio</h1>
-        <ul class="hidden md:flex md:[&>*]:flex">
+    <nav class="bg-white py-2 fixed w-full z-20 dark:bg-black">
+      <div class="container px-8 sm:px-0 sm:mx-auto flex justify-between">
+        <h1 class="text-3xl text-blue-700 font-bold dark:text-white">
+          Portfolio
+        </h1>
+        <ul class="hidden md:flex md:[&>*]:flex dark:text-white">
           <li>
-            <a class="m-2 hover:text-blue-400 transition duration-300" href=""
+            <a
+              class="m-2 hover:text-blue-400 transition duration-300"
+              href="#Home"
               >Home</a
             >
           </li>
           <li>
-            <a class="m-2 hover:text-blue-400 transition duration-300" href=""
+            <a
+              class="m-2 hover:text-blue-400 transition duration-300"
+              href="#About"
               >About</a
             >
           </li>
@@ -88,7 +94,7 @@
       </div>
     </nav>
     <!-- hero section -->
-    <section class="bg-blue-600 min-h-screen flex items-center pt-16">
+    <section id="Home" class="bg-blue-600 min-h-screen flex items-center pt-16">
       <div class="container mx-auto py-16">
         <div class="flex flex-col md:flex-row items-center">
           <div class="md:w-1/2 text-center md:text-left text-white">
@@ -117,9 +123,9 @@
               </button>
             </div>
           </div>
-          <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+          <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center relative">
             <div
-              class="size-70 bg-amber-100 overflow-hidden rounded-tl-[150px] rounded-br-[150px] rounded-tr-[100px] rounded-bl-[100px]"
+              class="z-5 size-70 bg-amber-100 overflow-hidden rounded-tl-[150px] rounded-br-[150px] rounded-tr-[100px] rounded-bl-[100px]"
             >
               <img
                 src="./images/irfan.jpg"
@@ -127,12 +133,18 @@
                 alt=""
               />
             </div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2 bg-slate-400 size-50 rounded-tl-[150px] rounded-br-[150px] rounded-tr-[100px] rounded-bl-[100px] animate-ping"
+            ></div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2 bg-slate-600 size-60 rounded-tl-[150px] rounded-br-[150px] rounded-tr-[100px] rounded-bl-[100px] animate-ping"
+            ></div>
           </div>
         </div>
       </div>
     </section>
     <!-- about section -->
-    <section class="container mx-auto py-12">
+    <section id="About" class="container mx-auto py-12">
       <h1 class="font-bold text-4xl text-center pt-10 pb-3">About Me</h1>
       <div
         class="bg-blue-500 h-1 w-[100px] text-center mx-auto mb-10 rounded-2xl"
@@ -140,17 +152,26 @@
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2">
           <div
-            class="w-full bg-blue-100 flex justify-center items-center py-20 rounded-2xl"
+            class="w-full relative bg-blue-100 flex justify-center items-center py-20 rounded-2xl group"
           >
             <img
-              class="size-8/14 rounded-full"
+              class="size-8/14 rounded-full z-10"
               src="./images/irfan2.jpg"
               alt=""
             />
+            <div
+              class="absolute z-3 bg-black size-3/9 rounded-full group-hover:animate-ping"
+            ></div>
+            <div
+              class="absolute z-3 bg-black size-4/10 rounded-full group-hover:animate-ping"
+            ></div>
+            <div
+              class="absolute z-3 bg-black size-5/11 rounded-full group-hover:animate-ping"
+            ></div>
           </div>
         </div>
         <div class="md:w-1/2">
-          <div class="mx-8">
+          <div class="mx-8 sm:mx-0">
             <div>
               <h1 class="text-2xl font-bold my-4">Who I Am</h1>
               <p class="text-[18px] my-4">
@@ -197,6 +218,233 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- projects section start here -->
+    <section id="projects" class="bg-slate-100">
+      <div class="container mx-auto px-8 py-6 sm:px-0">
+        <div class="container mb-6 mx-auto text-center md:max-w-150">
+          <h1 class="font-bold text-4xl text-center pt-10 pb-3">My Projects</h1>
+          <div
+            class="bg-blue-500 h-1 w-[100px] text-center mx-auto mb-5 rounded-2xl"
+          ></div>
+          <p class="text-[18px]">
+            Here are some of my recent projects. Each project represents unique
+            challenges and solutions.
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:xl:grid-cols-4 gap-6"
+        >
+          <div
+            class="bg-white w-auto h-fit rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition duration-300"
+          >
+            <div class="rounded-t-lg">
+              <img
+                class="h-50 w-full rounded-t-lg"
+                src="./projectImahes/Screenshot 2025-07-30 003657.png"
+                alt=""
+              />
+            </div>
+            <div class="py-4 px-6">
+              <h1 class="my-3 text-black font-bold text-2xl">
+                Restaurent website
+              </h1>
+              <p class="text-[18px] my-3 opacity-60">
+                A fully responsive e-commerce platform with product filtering,
+                cart functionality, and secure checkout.
+              </p>
+              <div class="my-3">
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >html</span
+                >
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >CSS</span
+                >
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="flex justify-between my-3">
+                <a
+                  href=""
+                  class="font-semibold text-blue-700 hover:text-blue-950"
+                  >View Projects</a
+                >
+                <a
+                  href=""
+                  class="font-semibold text-blue-700 hover:text-blue-950"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white w-auto h-fit rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition duration-300"
+          >
+            <div class="rounded-t-lg">
+              <img
+                class="h-50 w-full rounded-t-lg"
+                src="./projectImahes/Screenshot 2025-07-30 003657.png"
+                alt=""
+              />
+            </div>
+            <div class="py-4 px-6">
+              <h1 class="my-3 text-black font-bold text-2xl">
+                Restaurent website
+              </h1>
+              <p class="text-[18px] my-3 opacity-60">
+                A fully responsive e-commerce platform with product filtering,
+                cart functionality, and secure checkout.
+              </p>
+              <div class="my-3">
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >html</span
+                >
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >CSS</span
+                >
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="flex justify-between my-3">
+                <a
+                  href=""
+                  class="font-semibold text-blue-700 hover:text-blue-950"
+                  >View Projects</a
+                >
+                <a
+                  href=""
+                  class="font-semibold text-blue-700 hover:text-blue-950"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white w-auto h-fit rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition duration-300"
+          >
+            <div class="rounded-t-lg">
+              <img
+                class="h-50 w-full rounded-t-lg"
+                src="./projectImahes/Screenshot 2025-07-30 003657.png"
+                alt=""
+              />
+            </div>
+            <div class="py-4 px-6">
+              <h1 class="my-3 text-black font-bold text-2xl">
+                Restaurent website
+              </h1>
+              <p class="text-[18px] my-3 opacity-60">
+                A fully responsive e-commerce platform with product filtering,
+                cart functionality, and secure checkout.
+              </p>
+              <div class="my-3">
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >html</span
+                >
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >CSS</span
+                >
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="flex justify-between my-3">
+                <a
+                  href=""
+                  class="font-semibold text-blue-700 hover:text-blue-950"
+                  >View Projects</a
+                >
+                <a
+                  href=""
+                  class="font-semibold text-blue-700 hover:text-blue-950"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white w-auto h-fit rounded-lg shadow-md hover:-translate-y-2 hover:shadow-xl transition duration-300"
+          >
+            <div class="rounded-t-lg">
+              <img
+                class="h-50 w-full rounded-t-lg"
+                src="./projectImahes/Screenshot 2025-07-30 003657.png"
+                alt=""
+              />
+            </div>
+            <div class="py-4 px-6">
+              <h1 class="my-3 text-black font-bold text-2xl">
+                Restaurent website
+              </h1>
+              <p class="text-[18px] my-3 opacity-60">
+                A fully responsive e-commerce platform with product filtering,
+                cart functionality, and secure checkout.
+              </p>
+              <div class="my-3">
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >html</span
+                >
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >CSS</span
+                >
+                <span
+                  class="text-[13px] bg-blue-200 px-2 py-1 rounded-full text-blue-700"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="flex justify-between my-3">
+                <a
+                  href=""
+                  class="font-semibold text-blue-700 hover:text-blue-950"
+                  >View Projects</a
+                >
+                <a
+                  href=""
+                  class="font-semibold text-blue-700 hover:text-blue-950"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills section -->
+    <section id="Skills">
+      <div class="container mx-auto px-8 py-6 sm:px-0">
+        <div class="mx-auto text-center max-w-130">
+          <h1 class="text-4xl font-bold my-4">My Skills</h1>
+          <div
+            class="bg-blue-500 h-1 w-[100px] text-center mx-auto mb-5 rounded-2xl"
+          ></div>
+          <p class="text-[18px]">
+            I've worked with a variety of technologies and tools throughout my
+            career.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 bg-slate-400 mt-8">
+          <div>front-end skills</div>
+          <div>back-end skills</div>
+        </div>
+        <div>other skills</div>
       </div>
     </section>
 
